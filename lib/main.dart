@@ -26,7 +26,7 @@ class ChangeColorModel with ChangeNotifier {
   RadioListValue _value = new RadioListValue(0, Colors.green[500], "Green");
   RadioListValue get currentValue => _value;
 
-  void chageModel(RadioListValue m) {
+  void changeModel(RadioListValue m) {
     _value = m;
     notifyListeners();
   }
@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
                 title: Text(timeValue.label),
                 value: timeValue.key,
                 onChanged: (val) {
-                  model.chageModel(_buttonOptions[val]);
+                  model.changeModel(_buttonOptions[val]);
                 },
               ),
             )
