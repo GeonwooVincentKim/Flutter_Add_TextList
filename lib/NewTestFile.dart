@@ -93,9 +93,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   _key.currentState
                       .setTodo(Todo(title: _textFieldController.text));
-                  setState(() {
-
-                  });
+                  // setState(() {
+                  //
+                  // });
                   Navigator.of(context).pop();
                 },
               )
