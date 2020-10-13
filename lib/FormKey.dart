@@ -63,6 +63,16 @@ class MyCustomFormState extends State<MyCustomForm> {
                   // If the form is valid, display a Snackbar.
                   Scaffold.of(context)
                       .showSnackBar(SnackBar(content: Text('Processing Data')));
+                  return showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        // Retrieve the text the that user has entered by using the
+                        // TextEditingController.
+                        content: Text(myController.text),
+                      );
+                    },
+                  );
                 }
               },
               child: Text('Submit'),
