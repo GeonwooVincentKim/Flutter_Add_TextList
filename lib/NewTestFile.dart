@@ -93,9 +93,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   _key.currentState
                       .setTodo(Todo(title: _textFieldController.text));
-                  // setState(() {
-                  //
-                  // });
+                  setState(() {
+
+                  });
                   Navigator.of(context).pop();
                 },
               )
@@ -128,7 +128,6 @@ class TodoListS extends StatefulWidget {
 }
 
 class TodoList extends State<TodoListS> {
-  // List<Todo> todos = [Todo(title: 'Checktheicon'), Todo(title: 'help me')];
   List<Todo> todos = [];
 
   void setTodo(Todo todo) {
